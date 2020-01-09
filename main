@@ -1,0 +1,761 @@
+print("Instructions:\nIf there is an umlaut, please put an e after the letter with the umlaut (ex. kämpfen would be kaempfen)\n\n\tPlease hit enter to continue")
+input()
+counter = 0
+#counter2 = 1
+continuing = "no"
+verb = input("What German verb would you like information on? ")
+verb = verb.lower()
+form = input("What form of the verb would you like it to be in?")
+form = form.lower()
+while form != "ich" and form != "du" and form != "er/sie/es" and form != "wir" and form != "ihr" and form != "sie":
+  form = input("What form of the verb would you like it to be in (if er, sie, or es, please put 'er/sie/es')?")
+  form = form.lower()
+tense = input("What tense would you like it to be in? ")
+tense = tense.lower()
+while tense != "past" and tense != "present" and tense != "future": 
+  tense = input("What tense would you like it to be in? (past, present, or future) ")
+  tense = tense.lower()
+while counter == 0:
+  if continuing == "yes":
+    if continuing == "yes":
+      verb = input("\nWhat German verb would you like information on? ")
+      verb = verb.lower()
+      form = input("What form of the verb would you like it to be in?")
+      form = form.lower()
+      while form != "ich" and form != "du" and form != "er/sie/es" and form != "wir" and form != "ihr" and form != "sie":
+        form = input("What form of the verb would you like it to be in (if er, sie, or es, please put 'er/sie/es')?")
+        form = form.lower()
+      tense = input("What tense would you like it to be in? ")
+      tense = tense.lower()
+      while tense != "past" and tense != "present" and tense != "future": 
+        tense = input("What tense would you like it to be in? (past, present, or future) ")
+        tense = tense.lower()
+  if verb == "haben":
+    if form == "ich":
+      if tense == "past":
+        print("\nhatte, habe gehabt")
+      elif tense == "present":
+        print("\nhabe")
+      else:
+        print("\nwerde haben")
+    elif form == "du":
+      if tense == "past":
+        print("\nhattest, hast gehabt")
+      elif tense == "present":
+        print("\nhast")
+      else:
+        print("\nwirst haben")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nhatte, hat gehabt")
+      elif tense == "present":
+        print("\nhat")
+      else:
+        print("\nwird haben")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nhatten, haben gehabt")
+      elif tense == "present":
+        print("\nhaben")
+      else:
+        print("\nwerden haben")
+    else:
+      if tense == "past":
+        print("\nhattet, habt gehabt")
+      elif tense == "present":
+        print("\nhabt")
+      else:
+        print("\nwerdet haben")
+    counter2 = 0
+  elif verb == "sein":
+    if form == "ich":
+      if tense == "past":
+        print("\nwar, bin gewesen")
+      elif tense == "present":
+        print("\nbin")
+      else:
+        print("\nwerde sein")
+    elif form == "du":
+      if tense == "past":
+        print("\nwarst, bist gewesen")
+      elif tense == "present":
+        print("\nbist")
+      else:
+        print("\nwirst sein")
+    elif form == "er/sie/es":  
+      if tense == "past":
+        print("\nwar, ist gewesen")
+      elif tense == "present":
+        print("\nist")
+      else:
+        print("\nwird sein")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nwaren, sind gewesen")
+      elif tense == "present":
+        print("\nsind")
+      else:
+        print("\nwerden sein")
+    else:
+      if tense == "past":
+        print("\nwart, sein gewesen")
+      elif tense == "present":
+        print("\nseid")
+      else:
+        print("\nwerdet sein")
+    counter2 = 0
+  elif verb == "gehen":
+    if form == "ich":
+      if tense == "past":
+        print("\nging, bin gegangen")
+      elif tense == "present":
+        print("\ngehe")
+      else:
+        print("\nwerde gehen")
+    elif form == "du":
+      if tense == "past":
+        print("\ngingst, bist gegangen")
+      elif tense == "present":
+        print("\ngehst")
+      else:
+        print("\nwird gehen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nging, ist gegangen")
+      elif tense == "present":
+        print("\ngeht")
+      else:
+        print("\nwird gehen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\ngingen, sind gegangen")
+      elif tense == "present":
+        print("\ngehen")
+      else:
+        print("\nwerden gehen")
+    else:
+      if tense == "past":
+        print("\ngingt")
+      elif tense == "present":
+        print("\ngeht")
+      else:
+        print("\nwerden gehen")
+  elif verb == "kommen":
+    if form == "ich":
+      if tense == "past":
+        print("\nkam, bin gekommen")
+      elif tense == "present":
+        print("\nkomme")
+      else:
+        print("\nwerde kommen")
+    elif form == "du":
+      if tense == "past":
+        print("\nkamst, bist gekommen")
+      elif tense == "present":
+        print("\nkommst")
+      else:
+        print("\nwirst kommen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nkam, ist gekommen")
+      elif tense == "present":
+        print("\nkommt")
+      else:
+        print("\nwird kommen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nkamen, sind gekommen")
+      elif tense == "present":
+        print("\nkommen")
+      else:
+        print("\nwerden kommen")
+    else:
+      if tense == "past":
+        print("\nkamt, seid gekommen")
+      elif tense == "present":
+        print("\nkommt")
+      else:
+        print("\nwerdet kommen")
+  elif verb == "essen":
+    if form == "ich":
+      if tense == "past":
+        print("\naß, habe gegessen")
+      elif tense == "present":
+        print("\nesse")
+      else:
+        print("\nwerde essen")
+    elif form == "du":
+      if tense == "past":
+        print("\naßest, hast gegessen")
+      elif tense == "present":
+        print("\nisst")
+      else:
+        print("\nwirst essen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\naß, hat gegessen")
+      elif tense == "present":
+        print("\nisst")
+      else:
+        print("\nwird essen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\naßen, haben gegessen")
+      elif tense == "present":
+        print("\nessen")
+      else:
+        print("\nwerden essen")
+    else:
+      if tense == "past":
+        print("\naßt, habt gegessen")
+      elif tense == "present":
+        print("\nesst")
+      else:
+        print("\nwerdet essen")
+  elif verb == "sehen":
+    if form == "ich":
+      if tense == "past":
+        print("\nsah, habe gesehen")
+      elif tense == "present":
+        print("\nsehe")
+      else:
+        print("\nwerde sehen")
+    elif form == "du":
+      if tense == "past":
+        print("\nsah(e)st, hast gesehen")
+      elif tense == "present":
+        print("\nsiehst")
+      else:
+        print("\nwirst sehen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nsah, hat gesehen")
+      elif tense == "present":
+        print("\nsieht")
+      else:
+        print("\nwird sehen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nsahen, haben gesehen")
+      elif tense == "present":
+        print("\nsehen")
+      else:
+        print("\nwerden sehen")
+    else:
+      if tense == "past":
+        print("\nsaht, habt gesehen")
+      elif tense == "present":
+        print("\nseht")
+      else:
+        print("\nwerdet sehen")
+  elif verb == "laufen":
+    if form == "ich":
+      if tense == "past":
+        print("\nlief, bin gelaufen")
+      elif tense == "present":
+        print("\nlaufe")
+      else:
+        print("\nwerde laufen")
+    elif form == "du":
+      if tense == "past":
+        print("\nliefst, bist gelaufen")
+      elif tense == "present":
+        print("\nläufst")
+      else:
+        print("\nwirst laufen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nlief, ist gelaufen")
+      elif tense == "present":
+        print("\nläuft")
+      else:
+        print("\nwird laufen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nliefen, sind gelaufen")
+      elif tense == "present":
+        print("\nlaufen")
+      else:
+        print("\nwerden laufen")
+    else:
+      if tense == "past":
+        print("\nlieft, seid gelaufen")
+      elif tense == "present":
+        print("\nlauft")
+      else:
+        print("\nwerdet laufen")
+  elif verb == "lesen":
+    if form == "ich":
+      if tense == "past":
+        print("\nlas, habe gelesen")
+      elif tense == "present":
+        print("\nlese")
+      else:
+        print("\nwerde lesen")
+    elif form == "du":
+      if tense == "past":
+        print("\nlasest, hast gelesen")
+      elif tense == "present":
+        print("\nliest")
+      else:
+        print("\nwirst lesen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nlas, hat gelesen")
+      elif tense == "present":
+        print("\nliest")
+      else:
+        print("\nwird lesen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nlasen, haben gelesen")
+      elif tense == "present":
+        print("\nlesen")
+      else:
+        print("\nwerden lesen")
+    else:
+      if tense == "past":
+        print("\nlast, habt gelesen")
+      elif tense == "present":
+        print("\nlest")
+      else:
+        print("\nwerdet lesen")
+  elif verb == "werden":
+    if form == "ich":
+      if tense == "past":
+        print("\nwurde, bin geworden")
+      elif tense == "present":
+        print("\nwerde")
+      else:
+        print("\nwerde werden")
+    elif form == "du":
+      if tense == "past":
+        print("\nwurdest, bist geworden")
+      elif tense == "present":
+        print("\nwirst")
+      else:
+        print("\nwirst werden")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nwurde, ist geworden")
+      elif tense == "present":
+        print("\nwird")
+      else:
+        print("\nwird werden")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nwurden, sind geworden")
+      elif tense == "present":
+        print("\nwerden")
+      else:
+        print("\nwerden werden")
+    else:
+      if tense == "past":
+        print("\nwurdet, seid geworden")
+      elif tense == "present":
+        print("\nwerdet")
+      else:
+        print("\nwerdet werden")
+  elif verb == "fahren":
+    if form == "ich":
+      if tense == "past":
+        print("\nfuhr, bin gefahren")
+      elif tense == "present":
+        print("\nfahre")
+      else:
+        print("\nwerde fahren")
+    elif form == "du":
+      if tense == "past":
+        print("\nfuhrst, bist gefahren")
+      elif tense == "present":
+        print("\nfährst")
+      else:
+        print("\nwirst fahren")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nfuhr, ist gefahren")
+      elif tense == "present":
+        print("\nfährt")
+      else:
+        print("\nwird fahren")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nfuhren, sind gefahren")
+      elif tense == "present":
+        print("\nfahren")
+      else:
+        print("\nwerden fahren")
+    else:
+      if tense == "past":
+        print("\nfuhrt, seid gefahren")
+      elif tense == "present":
+        print("\nfahrt")
+      else:
+        print("\nwerdet fahren")
+  elif verb == "explodieren":
+    if form == "ich":
+      if tense == "past":
+        print("\nexplodierte, bin explodiert")
+      elif tense == "present":
+        print("\nexplodiere")
+      else:
+        print("\nwerde explodieren")
+    elif form == "du":
+      if tense == "past":
+        print("\nexplodiertest, bist explodiert")
+      elif tense == "present":
+        print("\nexplodierst")
+      else:
+        print("\nwirst explodieren")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nexplodierte, ist explodiert")
+      elif tense == "present":
+        print("\nexplodiert")
+      else:
+        print("\nwird explodieren")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nexplodierten, sind explodiert")
+      elif tense == "present":
+        print("\nexplodieren")
+      else:
+        print("\nwerden explodieren")
+    else:
+      if tense == "past":
+        print("\nexplodiertet, seid explodiert")
+      elif tense == "present":
+        print("\nexplodiert")
+      else:
+        print("\nwerdet explodieren")
+  elif verb == "vergiften":
+    if form == "ich":
+      if tense == "past":
+        print("\nvergiftete, habe vergiftet")
+      elif tense == "present":
+        print("\nvergifte")
+      else:
+        print("\nwerde vergiften")
+    elif form == "du":
+      if tense == "past":
+        print("\nvergiftetest, hast vergiftet")
+      elif tense == "present":
+        print("\nvergiftest")
+      else:
+        print("\nwirst vergiften")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nvergiftete, hat vergiftet")
+      elif tense == "present":
+        print("\nvergiftet")
+      else:
+        print("\nwird vergiften")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nvergifteten, haben vergiftet")
+      elif tense == "present":
+        print("\nvergiften")
+      else:
+        print("\nwerden vergiften")
+    else:
+      if tense == "past":
+        print("\nvergiftete, habt vergiftet")
+      elif tense == "present":
+        print("\nvergiftetet")
+      else:
+        print("\nwerdet vergiften")
+  elif verb == "schlagen":
+    if form == "ich":
+      if tense == "past":
+        print("\nschlug, habe geschlagen")
+      elif tense == "present":
+        print("\nschlage")
+      else:
+        print("\nwerde schlagen")
+    elif form == "du":
+      if tense == "past":
+        print("\nschlugst, hast geschlagen")
+      elif tense == "present":
+        print("\nschlägst")
+      else:
+        print("\nwirst schlagen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nschlug, hat geschlagen")
+      elif tense == "present":
+        print("\nschlägt")
+      else:
+        print("\nwird schlagen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nschlugen, haben geschlagen")
+      elif tense == "present":
+        print("\nschlagen")
+      else:
+        print("\nwerden schlagen")
+    else:
+      if tense == "past":
+        print("\nschlugt, habt geschlagen")
+      elif tense == "present":
+        print("\nschlagt")
+      else:
+        print("\nwerdet schlagen")
+  elif verb == "kaempfen":
+    if form == "ich":
+      if tense == "past":
+        print("\nkämpfte, habe gekämpft")
+      elif tense == "present":
+        print("\nkämpfe")
+      else:
+        print("\nwerde kämpfen")
+    elif form == "du":
+      if tense == "past":
+        print("\nkämpftest, hast gekämpft")
+      elif tense == "present":
+        print("\nkämpfst")
+      else:
+        print("\nwirst kämpfen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nkämpfte, hat gekämpft")
+      elif tense == "present":
+        print("\nkämpft")
+      else:
+        print("\nwird kämpfen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nkämpften, haben gekämpft")
+      elif tense == "present":
+        print("\nkämpfen")
+      else:
+        print("\nwerden kämpfen")
+    else:
+      if tense == "past":
+        print("\nkämpftet, habt gekämpft")
+      elif tense == "present":
+        print("\nkämpft")
+      else:
+        print("\nwerdet kämpfen")
+  elif verb == "malen":
+    if form == "ich":
+      if tense == "past":
+        print("\nmalte, habe gemalt")
+      elif tense == "present":
+        print("\nmale")
+      else:
+        print("\nwerde malen")
+    elif form == "du":
+      if tense == "past":
+        print("\nmaltest, hast gemalt")
+      elif tense == "present":
+        print("\nmalst")
+      else:
+        print("\nwirst malen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nmalte, hat gemalt")
+      elif tense == "present":
+        print("\nmalt")
+      else:
+        print("\nwird malen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nmalten, haben gemalt")
+      elif tense == "present":
+        print("\nmalen")
+      else:
+        print("\nwerden malen")
+    else:
+      if tense == "past":
+        print("\nmaltet, habt gemalt")
+      elif tense == "present":
+        print("\nmalt")
+      else:
+        print("\nwerdet malen")
+  elif verb == "zeichnen":
+    if form == "ich":
+      if tense == "past":
+        print("\nzeichnete, habe gezeichnet")
+      elif tense == "present":
+        print("\nzeichne")
+      else:
+        print("\nwerde zeichnen")
+    elif form == "du":
+      if tense == "past":
+        print("\nzeichnetest, hast gezeichnet")
+      elif tense == "present":
+        print("\nzeichnest")
+      else:
+        print("\nwirst zeichnen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nzeichnete, hat gezeichnet")
+      elif tense == "present":
+        print("\nzeichnet")
+      else:
+        print("\nwird zeichnen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nzeichneten, haben gezeichnet")
+      elif tense == "present":
+        print("\nzeichnen")
+      else:
+        print("\nwerden zeichnen")
+    else:
+      if tense == "past":
+        print("\nzeichnetet, habt gezeichnet")
+      elif tense == "present":
+        print("\nzeichnet")
+      else:
+        print("\nwerdet zeichnen")
+  elif verb == "hoeren":
+    if form == "ich":
+      if tense == "past":
+        print("\nhörte, habe gehört")
+      elif tense == "present":
+        print("\nhöre")
+      else:
+        print("\nwerde hören")
+    elif form == "du":
+      if tense == "past":
+        print("\nhörtest, hast gehört")
+      elif tense == "present":
+        print("\nhörst")
+      else:
+        print("\nwirst hören")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nhörte, hat gehört")
+      elif tense == "present":
+        print("\nhört")
+      else:
+        print("\nwird hören")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nhörten, haben gehört")
+      elif tense == "present":
+        print("\nhören")
+      else:
+        print("\nwerden hören")
+    else:
+      if tense == "past":
+        print("\nhörtet, habt gehört")
+      elif tense == "present":
+        print("\nhört")
+      else:
+        print("\nwerdet hören")
+  elif verb == "fliegen":
+    if form == "ich":
+      if tense == "past":
+        print("\nflog, bin geflogen")
+      elif tense == "present":
+        print("\nfliege")
+      else:
+        print("\nwerde fliegen")
+    elif form == "du":
+      if tense == "past":
+        print("\nflogst, bist geflogen")
+      elif tense == "present":
+        print("\nfliegst")
+      else:
+        print("\nwirst fliegen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nflog, ist geflogen")
+      elif tense == "present":
+        print("\nfliegt")
+      else:
+        print("\nwird fliegen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nflogen, sind geflogen")
+      elif tense == "present":
+        print("\nfliegen")
+      else:
+        print("\nwerden fliegen")
+    else:
+      if tense == "past":
+        print("\nflogt, seid geflogen")
+      elif tense == "present":
+        print("\nfliegt")
+      else:
+        print("\nwerdet fliegen")
+  elif verb == "suchen":
+    if form == "ich":
+      if tense == "past":
+        print("\nsuchte, habe gesucht")
+      elif tense == "present":
+        print("\nsuche")
+      else:
+        print("\nwerde suchen")
+    elif form == "du":
+      if tense == "past":
+        print("\nsuchtest, hast gesucht")
+      elif tense == "present":
+        print("\nsuchst")
+      else:
+        print("\nwirst suchen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nsuchte, hat gesucht")
+      elif tense == "present":
+        print("\nsucht")
+      else:
+        print("\nwird suchen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nsuchten, haben gesucht")
+      elif tense == "present":
+        print("\nsuchen")
+      else:
+        print("\nwerden suchen")
+    else:
+      if tense == "past":
+        print("\nsuchtet, habt gesucht")
+      elif tense == "present":
+        print("\nsucht")
+      else:
+        print("\nwerdet suchen")
+  elif verb == "sprechen":
+    if form == "ich":
+      if tense == "past":
+        print("\nsprach, habe gesprochen")
+      elif tense == "present":
+        print("\nspreche")
+      else:
+        print("\nwerde sprechen")
+    elif form == "du":
+      if tense == "past":
+        print("\nsprachst, hast gesprochen")
+      elif tense == "present":
+        print("\nsprichst")
+      else:
+        print("\nwirst sprechen")
+    elif form == "er/sie/es":
+      if tense == "past":
+        print("\nsprach, hat gesprochen")
+      elif tense == "present":
+        print("\nspricht")
+      else:
+        print("\nwird sprechen")
+    elif form == "wir" or form == "sie":
+      if tense == "past":
+        print("\nsprachen, haben gesprochen")
+      elif tense == "present":
+        print("\nsprechen")
+      else:
+        print("\nwerdn sprechen")
+    else:
+      if tense == "past":
+        print("\nspracht, habt gesprochen")
+      elif tense == "present":
+        print("\nsprecht")
+      else:
+        print("\nwerdet sprechen")
+  continuing = input("\nWould you like to test another German verb? ")
+  continuing = continuing.lower()
+  while continuing != "yes" and continuing != "no":
+    continuing = input("Would you like to test another German verb? ")
+    continuing = continuing.lower()
+  if continuing == "no":
+    counter += 1
